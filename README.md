@@ -1,4 +1,4 @@
-# FRAG: Frequency Adaptive Group for Diffusion Video Editing, ICML 2024
+# TPC: Test-time Procrustes Calibration for Diffusion-based Human Image Animation, NeurIPS 2024
 ## [<a href="https://dbstjswo505.github.io/FRAG-page/" target="_blank">Project Page</a>]
 
 [![arXiv](https://img.shields.io/badge/arXiv-TPC-b31b1b.svg)](https://arxiv.org/html/2410.24037v1) 
@@ -6,23 +6,36 @@
 [![Video Label](http://img.youtube.com/vi/9XPNElLv3Y4/0.jpg)](https://youtu.be/9XPNElLv3Y4)
 
 
-**FRAG** is a framework that enhances the quality of edited videos by effectively preserving high-frequency components.
+**TPC** is a framework that enhances the fidelity of image animation by effectively enhancing the robustness under compositional misaligned scenario between target and reference images in a model-agnostic manner.
 
 [//]: # (### Abstract)
 >Human image animation aims to generate a human motion video from the inputs of a reference human image and a target motion video. Current diffusion-based image animation systems exhibit high precision in transferring human identity into targeted motion, yet they still exhibit irregular quality in their outputs. Their optimal precision is achieved only when the physical compositions (i.e., scale and rotation) of the human shapes in the reference image and target pose frame are aligned. In the absence of such alignment, there is a noticeable decline in fidelity and consistency. Especially, in real-world environments, this compositional misalignment commonly occurs, posing significant challenges to the practical usage of current systems. To this end, we propose Test-time Procrustes Calibration (TPC), which enhances the robustness of diffusion-based image animation systems by maintaining optimal performance even when faced with compositional misalignment, effectively addressing real-world scenarios. The TPC provides a calibrated reference image for the diffusion model, enhancing its capability to understand the correspondence between human shapes in the reference and target images. Our method is simple and can be applied to any diffusion-based image animation system in a model-agnostic manner, improving the effectiveness at test time without additional training.
 
-## Environment
+## Environment for TPC
 ```
 conda create -n frag python=3.9
 conda activate frag
 pip install -r requirements.txt
 ```
-## DDIM inversion
-Type source prompt in config/config_sample.yaml to get ddim latent features.
+## TPC: Prepare Calibrated images for Human Image Animation model
+Input: 
+ - sample1.PNG (reference image)
+ - sample1.mp4 (driving video)
+Output:
+ - results/cal_image/pose_sample1_ref_sample1
+   - 0-person_cal_ref_img
+   - 0-person_cal_ref_mask_img
+   - 0-person_pose_mask_img
+   - 0-person_ref_mask_img
+   - pose_pad_mask_img
+   - poes_video
+   - ref_img
+
 ```
-python ddim_inversion.py
+python run.py
 ```
-## Editing
+
+## Inference Human Image Animation model with TPC
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
 python frag.py
