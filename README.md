@@ -1,9 +1,7 @@
 # TPC: Test-time Procrustes Calibration for Diffusion-based Human Image Animation, NeurIPS 2024
-## [<a href="https://dbstjswo505.github.io/FRAG-page/" target="_blank">Project Page</a>]
 
 [![arXiv](https://img.shields.io/badge/arXiv-TPC-b31b1b.svg)](https://arxiv.org/html/2410.24037v1) 
 
-[![Video Label](http://img.youtube.com/vi/9XPNElLv3Y4/0.jpg)](https://youtu.be/9XPNElLv3Y4)
 
 
 **TPC** is a framework that enhances the fidelity of image animation by effectively enhancing the robustness under compositional misaligned scenario between target and reference images in a model-agnostic manner.
@@ -37,8 +35,13 @@ cd TPC
 python run.py
 ```
 
+## Environment for Human Image Animation model (e.g., MagicAnimate)
+```
+[magicanimate](https://github.com/magic-research/magic-animate)
+```
+
 ## Inference Human Image Animation model with TPC
-### move calibrated images to Human Image Animation model (eg. magicanimatge)
+### move calibrated images to Human Image Animation model (e.g., MagicAnimate)
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
 cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate/inputs/applications/calibrated_image/
