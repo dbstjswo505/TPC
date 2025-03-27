@@ -33,11 +33,12 @@ Output:
    - ref_img
 
 ```
+cd TPC
 python run.py
 ```
 
 ## Inference Human Image Animation model with TPC
-# move calibrated images to Human Image Animation model (eg. magicanimatge)
+### move calibrated images to Human Image Animation model (eg. magicanimatge)
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
 cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate/inputs/applications/calibrated_image/
@@ -47,20 +48,22 @@ bash scripts/animate.sh
 
 ## Acknowledgement
 
-This code is implemented on top of following contributions: [TAV](https://github.com/showlab/Tune-A-Video), [TokenFlow](https://github.com/omerbt/TokenFlow), [HuggingFace](https://github.com/huggingface/transformers), [FLATTEN](https://github.com/yrcong/flatten), [FateZero](https://github.com/ChenyangQiQi/FateZero), [Prompt-to-prompt](https://github.com/google/prompt-to-prompt) 
+This code is implemented on top of following contributions: [magicanimate](https://github.com/magic-research/magic-animate), [SAM](https://github.com/facebookresearch/segment-anything), [DensePose](https://github.com/facebookresearch/DensePose), [MMPose](https://github.com/open-mmlab/mmpose)
 
 We thank the authors for open-sourcing these great projects and papers!
 
-This work was supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No. 2021-0-01381, Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and partly supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.2022-0-00184, Development and Study of AI Technologies to Inexpensively Conform to Evolving Policy on Ethics).
+This work was supported by Institute for Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.RS-2021-II211381, Development of Causal AI through Video Understanding and Reinforcement Learning, and Its Applications to Real Environments) and partly supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.RS-2022-II220184, 2022-0-00184, Development and Study of AI Technologies to Inexpensively Conform to Evolving Policy on Ethics)
 
 ## Citation
 Please kindly cite our paper if you use our code, data, models or results:
 
 ```bibtex
-@article{yoon2024frag,
-  title={FRAG: Frequency Adapting Group for Diffusion Video Editing},
-  author={Yoon, Sunjae and Koo, Gwanhyeong and Kim, Geonwoo and Yoo, Chang D},
-  journal={arXiv preprint arXiv:2406.06044},
+@article{yoon2024tpc,
+  title={Tpc: Test-time procrustes calibration for diffusion-based human image animation},
+  author={Yoon, Sunjae and Koo, Gwanhyeong and Lee, Younghwan and Yoo, Chang},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={118654--118677},
   year={2024}
 }
 ```
