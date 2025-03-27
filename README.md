@@ -21,6 +21,7 @@ pip install -r requirements.txt
 Input: 
  - sample1.PNG (reference image)
  - sample1.mp4 (driving video)
+
 Output:
  - results/cal_image/pose_sample1_ref_sample1
    - 0-person_cal_ref_img
@@ -36,9 +37,12 @@ python run.py
 ```
 
 ## Inference Human Image Animation model with TPC
+# move calibrated images to Human Image Animation model (eg. magicanimatge)
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
-python frag.py
+cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate/inputs/applications/calibrated_image/
+cd model/magicanimate
+bash scripts/animate.sh
 ```
 
 ## Acknowledgement
