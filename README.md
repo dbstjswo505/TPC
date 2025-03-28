@@ -36,9 +36,7 @@ python run.py
 ```
 
 ## Environment for Human Image Animation model (e.g., MagicAnimate)
-```
 [magicanimate](https://github.com/magic-research/magic-animate)
-```
 
 ## Inference Human Image Animation model with TPC
 ### move calibrated images to Human Image Animation model (e.g., MagicAnimate)
