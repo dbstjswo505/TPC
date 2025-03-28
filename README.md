@@ -15,7 +15,7 @@ conda create -n openmmlab_my python=3.8
 conda activate openmmlab_my
 pip install -r requirements.txt
 ```
-# if it is not working, try below
+## if it is not working, try below
 ```
 conda create -n openmmlab_my python=3.8
 conda activate openmmlab_my
