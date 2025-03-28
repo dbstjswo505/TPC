@@ -11,10 +11,29 @@
 
 ## Environment for TPC
 ```
-conda create -n frag python=3.9
-conda activate frag
+conda create -n openmmlab_my python=3.8
+conda activate openmmlab_my
 pip install -r requirements.txt
 ```
+# if it is not working, try below
+```
+conda create -n openmmlab_my python=3.8
+conda activate openmmlab_my
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
+
+2. (https://detectron2.readthedocs.io/en/latest/tutorials/install.html) SAM
+git clone https://github.com/facebookresearch/detectron2.git
+python -m pip install -e detectron2
+
+3. (https://mmpose.readthedocs.io/en/latest/installation.html) Openmm
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.1"
+mim install "mmdet>=3.1.0"
+mim install "mmpose>=1.1.0"
+
+```
+
 ## TPC: Prepare Calibrated images for Human Image Animation model
 Input: 
  - sample1.PNG (reference image)
