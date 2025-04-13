@@ -62,7 +62,7 @@ python run.py
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
 cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate_TPC/inputs/applications/calibrated_image/
-cd model/magicanimate
+cd model/magicanimate_TPC
 bash scripts/animate.sh
 ```
 
