@@ -1,0 +1,35 @@
+pretrained_model_path: "/mnt/hdd/sunjaeyoon/workspace/Neurips2024/magicanimate_pretrained_models/stable-diffusion-v1-5"
+pretrained_vae_path: "/mnt/hdd/sunjaeyoon/workspace/Neurips2024/magicanimate_pretrained_models/sd-vae-ft-mse"
+pretrained_controlnet_path: "/mnt/hdd/sunjaeyoon/workspace/Neurips2024/magicanimate_pretrained_models/MagicAnimate/densepose_controlnet"
+pretrained_appearance_encoder_path: "/mnt/hdd/sunjaeyoon/workspace/Neurips2024/magicanimate_pretrained_models/MagicAnimate/appearance_encoder"
+pretrained_unet_path: ""
+
+motion_module: "/mnt/hdd/sunjaeyoon/workspace/Neurips2024/magicanimate_pretrained_models/MagicAnimate/temporal_attention/temporal_attention.ckpt"
+
+savename: null
+
+fusion_blocks: "midup"
+
+seed:           [1]
+steps:          25
+guidance_scale: 7.5
+sparsity: 4
+
+calibration_branch: false
+use_pad: false
+source_image:
+  - "inputs/applications/calibrated_image/pose_sample1_ref_sample1/ref_img/sample1.PNG"
+video_path:
+  - "inputs/applications/calibrated_image/pose_sample1_ref_sample1/pose_video/sample1.mp4"
+
+inference_config: "configs/inference/inference.yaml"
+size: 512
+L:    16
+S:    1 
+I:    0
+clip: 0
+offset: 0
+max_length: null
+video_type: "condition"
+invert_video: false
+save_individual_videos: false
