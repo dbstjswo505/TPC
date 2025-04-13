@@ -61,7 +61,7 @@ python run.py
 ### move calibrated images to Human Image Animation model (e.g., MagicAnimate)
 Type target prompt in config/config_sample.yaml to get edited video.
 ```
-cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate/inputs/applications/calibrated_image/
+cp TPC/TPC/results/cal_image/pose_sample1_ref_sample1 TPC/model/magic-animate_TPC/inputs/applications/calibrated_image/
 cd model/magicanimate
 bash scripts/animate.sh
 ```
