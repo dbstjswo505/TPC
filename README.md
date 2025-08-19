@@ -1,7 +1,7 @@
 # TPC: Test-time Procrustes Calibration for Diffusion-based Human Image Animation, NeurIPS 2024
 
 [![arXiv](https://img.shields.io/badge/arXiv-TPC-b31b1b.svg)](https://arxiv.org/html/2410.24037v1) 
-
+[![Demo Page](https://img.shields.io/badge/Demo-Page-blue?logo=google-chrome&style=flat-square)](https://dbstjswo505.github.io/TPC-page/)
 
 
 **TPC** is a framework that enhances the fidelity of image animation by effectively enhancing the robustness under compositional misaligned scenario between target and reference images in a model-agnostic manner.
