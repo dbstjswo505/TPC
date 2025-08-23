@@ -10,7 +10,7 @@
 
 ## 🎬 Teaser Demo  
 <p align="center">
-  <video src="assets/qual.webm" width="720" autoplay loop muted playsinline></video>
+  <video src="asset/qual.webm" width="720" autoplay loop muted playsinline></video>
 </p>
 
 ---
