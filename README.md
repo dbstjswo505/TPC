@@ -10,7 +10,7 @@
 
 ## 🎬 Teaser Demo  
 <p align="center">
-  <video src="https://dbstjswo505.github.io/TPC-page/asset/qual.webm" width="720" autoplay loop muted playsinline></video><br>
+  <video src="https://dbstjswo505.github.io/TPC/asset/qual.webm" width="720" autoplay loop muted playsinline></video><br>
   <i>If the animation does not load, see the <a href="https://dbstjswo505.github.io/TPC-page/">demo page</a>.</i>
 </p>
 
