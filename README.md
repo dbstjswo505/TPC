@@ -10,7 +10,7 @@
 
 ## 🎬 Teaser Demo  
 <p align="center">
-  <img src="assets/qual.gif" width="720"/><br>
+  <img src="asset/qual.gif" width="720"/><br>
   <i>If the animation does not load, see the <a href="https://dbstjswo505.github.io/TPC-page/">demo page</a>.</i>
 </p>
 
